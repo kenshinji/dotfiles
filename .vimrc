@@ -1,6 +1,8 @@
 color desert
 set relativenumber
 set showtabline=2
+set expandtab
+set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set number
 set smartcase
@@ -21,6 +23,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'vim-ruby/vim-ruby'
 
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'rust-lang/rust.vim' " highlight rust syntax
@@ -50,7 +53,6 @@ set laststatus=2
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
 syntax on
 set hidden
 let g:racer_cmd = "/Users/kenshinji/projects/racer/target/release/racer"
@@ -68,6 +70,7 @@ let $RUST_SRC_PATH="/Users/kenshinji/projects/rust/src/"
 " Put your non-Plugin stuff after this line
 " =====================================================================
 " autocmd FileType python set omnifunc=pythoncomplete#Complete
+filetype plugin indent on    " required
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -75,3 +78,4 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType java set omnifunc=javacomplete#Complete
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
