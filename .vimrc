@@ -1,3 +1,13 @@
+"================================================================================================
+"                                 <My vimrc>
+"================================================================================================
+" Author:         Fred Wang [http://kenshinji.com]
+" Source:         http://github.com/kenshinji/dotfiles
+"
+" My vimrc, is still in to process of being completed. Inspired by other hackers, 
+" I decided to organize all of my vimrc style configurations into individual
+" files organized by functionality. These live in ~/.vim/rcfiles.
+"------------------------------------------------------------------------------------------------
 color desert
 set relativenumber
 set showtabline=2
@@ -79,3 +89,14 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType java set omnifunc=javacomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+
+function! s:SourceConfigFilesIn(directory)
+  let directory_splat = '~/.vim/' . a:directory . '/*'
+  for config_file in split(glob(directory_splat), '\n')
+    if filereadable(config_file)
+      execute 'source' config_file
+    endif
+  endfor
+endfunction
+
+call s:SourceConfigFilesIn('rcfiles')
