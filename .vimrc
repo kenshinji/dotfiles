@@ -40,6 +40,7 @@ Plugin 'rust-lang/rust.vim' " highlight rust syntax
 Plugin 'phildawes/racer' " auto complete rust key words
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'christoomey/vim-tmux-navigator'
 set laststatus=2
 "set t_Co=256
 "let g:Powerline_symbols='fancy'
