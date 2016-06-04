@@ -32,7 +32,11 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" CtrlP settings
 Plugin 'kien/ctrlp.vim'
+
+
 Plugin 'vim-ruby/vim-ruby'
 
 Plugin 'scrooloose/nerdtree.git'
@@ -66,8 +70,16 @@ set laststatus=2
 call vundle#end()            " required
 syntax on
 set hidden
+" racer settings
 let g:racer_cmd = "/Users/kenshinji/projects/racer/target/release/racer"
 let $RUST_SRC_PATH="/Users/kenshinji/projects/rust/src/"
+
+" ctrlp settings
+" Make CtrlP use ag for listing the files. Way faster and no useless files.
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
+
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
