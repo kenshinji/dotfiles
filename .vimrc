@@ -41,6 +41,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 " Surround settings
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
 
 Plugin 'vim-ruby/vim-ruby'
 
