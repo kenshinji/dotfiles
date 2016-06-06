@@ -9,6 +9,9 @@
 " files organized by functionality. These live in ~/.vim/rcfiles.
 "------------------------------------------------------------------------------------------------
 color desert
+" set no backup file
+set nobackup
+set nowritebackup
 set relativenumber
 set showtabline=2
 set expandtab
