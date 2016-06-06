@@ -21,6 +21,7 @@ set number
 set smartcase
 set incsearch
 set hlsearch
+set laststatus=2
 "set wildmenu
 set showmatch
 set guifont=Monaco:h16
@@ -48,7 +49,6 @@ Plugin 'phildawes/racer' " auto complete rust key words
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'christoomey/vim-tmux-navigator'
-set laststatus=2
 "set t_Co=256
 "let g:Powerline_symbols='fancy'
 "autocmd vimenter * NERDTree
