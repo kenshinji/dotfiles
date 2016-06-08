@@ -34,6 +34,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'elixir-lang/vim-elixir'
 
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'rust-lang/rust.vim' " highlight rust syntax
