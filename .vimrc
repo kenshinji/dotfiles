@@ -9,6 +9,9 @@
 " files organized by functionality. These live in ~/.vim/rcfiles.
 "------------------------------------------------------------------------------------------------
 color desert
+" set no backup file
+set nobackup
+set nowritebackup
 set relativenumber
 set showtabline=2
 set expandtab
@@ -18,6 +21,7 @@ set number
 set smartcase
 set incsearch
 set hlsearch
+set laststatus=2
 "set wildmenu
 set showmatch
 set guifont=Monaco:h16
@@ -32,7 +36,13 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" CtrlP settings
 Plugin 'kien/ctrlp.vim'
+" Surround settings
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
+
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-lang/vim-elixir'
 
@@ -42,7 +52,6 @@ Plugin 'phildawes/racer' " auto complete rust key words
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'christoomey/vim-tmux-navigator'
-set laststatus=2
 "set t_Co=256
 "let g:Powerline_symbols='fancy'
 "autocmd vimenter * NERDTree
@@ -67,8 +76,16 @@ set laststatus=2
 call vundle#end()            " required
 syntax on
 set hidden
+" racer settings
 let g:racer_cmd = "/Users/kenshinji/projects/racer/target/release/racer"
 let $RUST_SRC_PATH="/Users/kenshinji/projects/rust/src/"
+
+" ctrlp settings
+" Make CtrlP use ag for listing the files. Way faster and no useless files.
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
+
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
