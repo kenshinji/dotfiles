@@ -8,8 +8,13 @@
 " I decided to organize all of my vimrc style configurations into individual
 " files organized by functionality. These live in ~/.vim/rcfiles.
 "------------------------------------------------------------------------------------------------
-color desert
-" set no backup file
+syntax enable
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+colorscheme solarized
 set nobackup
 set nowritebackup
 set relativenumber
@@ -36,6 +41,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" Solarized plugin
+Plugin 'altercation/vim-colors-solarized'
 
 " CtrlP settings
 Plugin 'kien/ctrlp.vim'
