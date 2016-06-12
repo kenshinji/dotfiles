@@ -128,3 +128,9 @@ function! s:SourceConfigFilesIn(directory)
 endfunction
 
 call s:SourceConfigFilesIn('rcfiles')
+
+" Mapping settings
+" =========================================================================
+
+let mapleader = ","
+imap jj <esc>
