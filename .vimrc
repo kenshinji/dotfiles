@@ -42,6 +42,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+
 " Solarized plugin
 Plugin 'altercation/vim-colors-solarized'
 
@@ -114,7 +115,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
-autocmd FileType java set omnifunc=javacomplete#Complete
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
 function! s:SourceConfigFilesIn(directory)
