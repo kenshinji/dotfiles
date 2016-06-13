@@ -134,3 +134,5 @@ call s:SourceConfigFilesIn('rcfiles')
 
 let mapleader = ","
 imap jj <esc>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
