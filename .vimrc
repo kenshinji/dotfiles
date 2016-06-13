@@ -133,6 +133,7 @@ call s:SourceConfigFilesIn('rcfiles')
 " =========================================================================
 
 let mapleader = ","
-imap jj <esc>
+inoremap jk <esc>
+inoremap <esc> <nop>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
