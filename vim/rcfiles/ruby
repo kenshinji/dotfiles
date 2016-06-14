@@ -1,6 +1,7 @@
 "Ruby configurations
 "------------------------
 
+Plugin 'vim-ruby/vim-ruby'
 "Ruby is new, and sometimes funtimes
 au BufRead,BufNewFile Vagrantfile, Gemfile, Guardfile set filetype=ruby
 au BufRead,BufNewFile Gemfile set filetype=ruby
