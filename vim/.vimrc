@@ -13,11 +13,16 @@
 "---------------------------------------------------------------------
 
 " Want to set this before any others
-let mapleader = "\<Space>"
+" Mapping settings
+let mapleader = ","
+inoremap jk <esc>
+inoremap <esc> <nop>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 
 function! s:SourceConfigFilesIn(directory)
   let directory_splat = '~/.vim/' . a:directory . '/*'
-  echom directory_splat
   for config_file in split(glob(directory_splat), '\n')
     if filereadable(config_file)
         execute 'source' config_file
@@ -33,7 +38,6 @@ call vundle#rc("~/.vim/bundles/")
 
 " Plugins are each listed in their own file. Loop and source ftw
 "----------------------------------------------------------------
-echom ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 call s:SourceConfigFilesIn('rcplugins')
 
 
@@ -43,3 +47,4 @@ syntax on
 " Vimrc is split accross multiple files, so loop over and source each
 "---------------------------------------------------------------------
 call s:SourceConfigFilesIn('rcfiles')
+

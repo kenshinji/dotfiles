@@ -1,0 +1,3 @@
+" Endwise - Intelligently insert ends, endifs, awesome
+Plugin 'tpope/vim-endwise'
+" vim:ft=vim
