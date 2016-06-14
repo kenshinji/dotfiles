@@ -1,5 +1,4 @@
-"===========================================================================
-"                                ~My vimrc~
+"=========================================================================== "                                ~My vimrc~
 "===========================================================================
 " Author:        Chris Toomey [http://ctoomey.com]
 " Source:        https://github.com/christoomey/dotfiles
@@ -48,3 +47,7 @@ syntax on
 "---------------------------------------------------------------------
 call s:SourceConfigFilesIn('rcfiles')
 
+set incsearch
+set hlsearch
+set laststatus=2
+set nocompatible
