@@ -47,9 +47,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 
 " CtrlP settings
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
 " Surround settings
-Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 
 Plugin 'vim-ruby/vim-ruby'
@@ -61,27 +60,7 @@ Plugin 'phildawes/racer' " auto complete rust key words
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'christoomey/vim-tmux-navigator'
-"set t_Co=256
-"let g:Powerline_symbols='fancy'
-"autocmd vimenter * NERDTree
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
-" Plugin 'user/L9', {'name': 'newL9'}
-
-" All of your Plugins must be added before the following line
 call vundle#end()            " required
 syntax on
 set hidden
@@ -91,8 +70,8 @@ let $RUST_SRC_PATH="/Users/kenshinji/projects/rust/src/"
 
 " ctrlp settings
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_use_caching = 0
+"let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"let g:ctrlp_use_caching = 0
 
 
 " To ignore plugin indent changes, instead use:
@@ -128,6 +107,7 @@ function! s:SourceConfigFilesIn(directory)
 endfunction
 
 call s:SourceConfigFilesIn('rcfiles')
+call s:SourceConfigFilesIn('rcplugins')
 
 " Mapping settings
 " =========================================================================
