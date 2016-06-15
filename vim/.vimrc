@@ -51,3 +51,6 @@ set incsearch
 set hlsearch
 set laststatus=2
 set nocompatible
+set relativenumber
+set nowritebackup
+set nobackup
