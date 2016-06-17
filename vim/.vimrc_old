@@ -15,14 +15,10 @@ else
   set background=dark
 endif
 colorscheme solarized
-set nobackup
-set nowritebackup
-set relativenumber
 set showtabline=2
 set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
-set number
 set smartcase
 set incsearch
 set hlsearch

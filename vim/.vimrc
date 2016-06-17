@@ -51,6 +51,9 @@ set incsearch
 set hlsearch
 set laststatus=2
 set nocompatible
+set relativenumber
+set nowritebackup
+set nobackup
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -69,4 +72,6 @@ else
   let g:solarized_termcolors=16
 endif
 colorscheme solarized
+
+
 
