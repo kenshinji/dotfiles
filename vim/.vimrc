@@ -65,13 +65,4 @@ if has("gui_running")
   endif
 endif
 
-set background=dark
-if has('gui_running')
-  let g:solarized_termcolors=256
-else
-  let g:solarized_termcolors=16
-endif
-colorscheme solarized
-
-
 
