@@ -1,0 +1,14 @@
+" Shell file configurations
+"--------------------------------
+
+au BufRead,BufNewFile *.sh set filetype=sh
+au BufRead,BufNewFile *.bash set filetype=sh
+au FileType sh set ts=2 sw=2 sts=2 
+
+autocmd FileType sh nmap <F9> :w<CR>:!bash %<CR>
+
+
+
+
+
+" vim:ft=vim
