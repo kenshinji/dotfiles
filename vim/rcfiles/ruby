@@ -9,10 +9,11 @@ au BufRead,BufNewFile Guardfile set filetype=ruby
 au BufRead,BufNewFile Thorfile set filetype=ruby
 au BufRead,BufNewFile .pryrc set filetype=ruby
 au BufRead,BufNewFile .thor set filetype=ruby
+au BufRead,BufNewFile *.html.erb set filetype=html.erb
 au FileType ruby setl sw=2 sts=2 ts=2 tw=80 " Two spaces per tab
 
 " Set .erb html files
-au FileType ebury setl setl sw=2 sts=2 ts=2 " Two spaces per tab
+au FileType html.erb setl sw=2 sts=2 ts=2 
 
 " Mapping setting
 autocmd FileType ruby nmap <F9> :w<CR>:!ruby %<CR>
