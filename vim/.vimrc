@@ -1,14 +1,8 @@
 "=========================================================================== "                                ~My vimrc~
 "===========================================================================
-" Author:        Chris Toomey [http://ctoomey.com]
-" Source:        https://github.com/christoomey/dotfiles
+" Author:        Fred Wang [http://kenshinji.com]
+" Source:        https://github.com/kenshinji/dotfiles
 "
-" My vimrc, mostly for rails & javascript development. I have organized
-" all of my vimrc style configurations into individual files organized
-" by functionality. These live in ~/.vim/rcfiles.
-"
-" I am using Vundle to manage my plugins, which is configured below
-" Each plugin is configured in its own file in ~/.vim/rcplugins
 "---------------------------------------------------------------------
 
 " Want to set this before any others
