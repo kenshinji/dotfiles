@@ -64,4 +64,7 @@ else
   set background=dark
 endif
 colorscheme solarized
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
     
