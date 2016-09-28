@@ -1,4 +1,9 @@
 #!/bin/bash 
+#set -e makes the program exit when error happens
+set -e
+
+#set -x print out every single line it executes
+set -x
  
 #First find out if .tmux.conf exists under $HOME 
 
