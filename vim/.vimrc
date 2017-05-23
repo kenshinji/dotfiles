@@ -56,6 +56,8 @@ set relativenumber
 set nowritebackup
 set nobackup
 set guifont=Monaco:h14
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
 
 syntax enable
 if has('gui_running')

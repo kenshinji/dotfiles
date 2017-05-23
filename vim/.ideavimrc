@@ -1,0 +1,5 @@
+set vim-surround
+source ~/_vimrc
+nmap ,c :action GotoClass<CR>
+
+
