@@ -1,0 +1,8 @@
+"Elixir configurations
+"-----------------------------
+
+Plugin 'elixir-lang/vim-elixir'
+
+au BufRead,BufNewFile *.ex setl sw=2 sts=2 ts=2 tw=80
+
+" vim:ft=vim
