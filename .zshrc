@@ -86,3 +86,6 @@ alias vim="/usr/local/Cellar/macvim/7.4-104/bin/mvim"
 alias vi="/usr/local/Cellar/vim/7.4.1864_1/bin/vim"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+#in order to fix issue of "JAVA_HOME is defined incorrectly" on OS X
+export JAVA_HOME=$(/usr/libexec/java_home)
