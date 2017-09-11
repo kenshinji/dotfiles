@@ -55,6 +55,7 @@ set nocompatible
 set relativenumber
 set nowritebackup
 set nobackup
+set ff=unix
 set guifont=Monaco:h14
 " set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " set list
