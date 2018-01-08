@@ -32,16 +32,20 @@ endfunction
 
 " Setup Vundle to manage my bundles
 "-----------------------------------
+set nocompatible
 filetype off " required!
-set rtp+=~/.vim/bundles/vundle/
-call vundle#rc("~/.vim/bundles/")
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on " required!
+
 
 " Plugins are each listed in their own file. Loop and source ftw
 "----------------------------------------------------------------
 call s:SourceConfigFilesIn('rcplugins')
 
 
-filetype plugin indent on " required!
 syntax on
 
 " Vimrc is split accross multiple files, so loop over and source each
@@ -51,7 +55,6 @@ call s:SourceConfigFilesIn('rcfiles')
 set incsearch
 set hlsearch
 set laststatus=2
-set nocompatible
 set relativenumber
 set nowritebackup
 set nobackup
