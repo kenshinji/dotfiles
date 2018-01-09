@@ -22,7 +22,7 @@ ino { {}<left>
 ino {<CR> {<CR>}<ESC>O
 
 function! s:SourceConfigFilesIn(directory)
-  let directory_splat = '~/.vim/' . a:directory . '/*'
+  let directory_splat = '~/git/dotfiles/vim/' . a:directory . '/*'
   for config_file in split(glob(directory_splat), '\n')
     if filereadable(config_file)
         execute 'source' config_file
@@ -37,20 +37,21 @@ filetype off " required!
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-call vundle#end()
+call s:SourceConfigFilesIn('rcplugins')
+call s:SourceConfigFilesIn('rcfiles')
+
 filetype plugin indent on " required!
 
 
 " Plugins are each listed in their own file. Loop and source ftw
 "----------------------------------------------------------------
-call s:SourceConfigFilesIn('rcplugins')
 
 
 syntax on
 
 " Vimrc is split accross multiple files, so loop over and source each
 "---------------------------------------------------------------------
-call s:SourceConfigFilesIn('rcfiles')
+call vundle#end()
 
 set incsearch
 set hlsearch
