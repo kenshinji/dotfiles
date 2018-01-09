@@ -42,7 +42,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 call s:SourceConfigFilesIn('rcplugins')
 call s:SourceConfigFilesIn('rcfiles')
-Plugin 'TimothyYe/vim-tips'
 call vundle#end()
 
 set incsearch
