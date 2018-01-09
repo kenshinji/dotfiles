@@ -4,6 +4,9 @@
 " Source:        https://github.com/kenshinji/dotfiles
 "
 "---------------------------------------------------------------------
+if has("syntax")
+  syntax on
+endif
 
 " Want to set this before any others
 " Mapping settings
@@ -39,18 +42,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 call s:SourceConfigFilesIn('rcplugins')
 call s:SourceConfigFilesIn('rcfiles')
-
-filetype plugin indent on " required!
-
-
-" Plugins are each listed in their own file. Loop and source ftw
-"----------------------------------------------------------------
-
-
-syntax on
-
-" Vimrc is split accross multiple files, so loop over and source each
-"---------------------------------------------------------------------
+Plugin 'TimothyYe/vim-tips'
 call vundle#end()
 
 set incsearch
@@ -64,13 +56,13 @@ set guifont=Monaco:h14
 " set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " set list
 
-syntax enable
 if has('gui_running')
   set background=light
 else
   set background=dark
 endif
 colorscheme solarized
+filetype plugin indent on " required!
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
