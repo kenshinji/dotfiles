@@ -1,6 +1,10 @@
 " JavaScript configuration
 "-------------------------------
 
+"autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 
 " vim:ft=vim
