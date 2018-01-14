@@ -46,6 +46,7 @@ call vundle#end()
 
 set incsearch
 set hlsearch
+set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set nowritebackup
