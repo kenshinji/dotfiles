@@ -67,3 +67,9 @@ filetype plugin indent on " required!
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
     
+function SwitchBuffer()
+  b#
+endfunction
+
+nmap <Tab> :call SwitchBuffer()<CR>
+	
