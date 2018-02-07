@@ -1,0 +1,43 @@
+Plugin 'w0rp/ale'
+
+let g:ale_linters = {
+  \   'javascript': ['eslint'],
+  \}
+
+let g:ale_fixers = {
+  \   'javascript': ['eslint'],
+  \}
+
+" Set this setting in vimrc if you want to fix files automatically on save.
+" This is off by default.
+let g:ale_fix_on_save = 1
+nmap <silent> [r <Plug>(ale_previous_wrap)
+nmap <silent> ]r <Plug>(ale_next_wrap)
+
+" Linting on all changes felt too aggressive. The below settings calls lint on
+" " certain events, either when I stop interacting or when entering / leaving
+" " insert mode
+set updatetime=1000
+autocmd CursorHold * call ale#Lint()
+autocmd CursorHoldI * call ale#Lint()
+autocmd InsertLeave * call ale#Lint()
+autocmd TextChanged * call ale#Lint()
+
+let g:ale_lint_on_text_changed = 0
+let g:ale_sign_column_always = 1
+
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+		    
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%d Warnings %d Errors',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
+		
+set statusline=%{LinterStatus()}
+
+" vim:ft=vim
