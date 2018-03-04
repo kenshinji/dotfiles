@@ -3,11 +3,11 @@ Dotfiles are used for customizing operating systems. I store my dotfiles, script
 
 
 ## Key Features
-- Vim - [Vim](https://github.com/vim/vim) is an advanced text editor to manage the dotfiles. Additional customized functionalities will be added to repo.
+- Vim - Vim is my favorite editor, and I'm working on adding more customization functionalities into it.
 
 - Tmux - [Tmux](https://tmux.github.io/) is a powerful software application to multiplex several virtual consoles, allowing a user to access multiple Linux/Unix servers remotely. I have customized a configuration file [here](./.tmux.conf).
 
-- Zsh - [ZSH](http://ohmyz.sh/) shares many similar features as Bash Shell. I run Zsh for managing my dotfiles because of its helpful functions and plugins.
+- Zsh - I used to use Bash for all my Linux/Unix machine, and I got started to use Zsh until I found [this](http://ohmyz.sh/)
 
 ## Inspiration
 - [Chris Toomey](https://github.com/christoomey/dotfiles)

@@ -1,15 +1,18 @@
-<<<<<<< HEAD
+tap "timothyye/tap"
 tap "homebrew/core"
-tap "homebrew/binary"
 tap "homebrew/bundle"
+tap "caskroom/cask"
+tap "bukalapak/packages"
+tap "homebrew/binary"
 tap "homebrew/services"
 tap "pivotal/tap"
-tap "caskroom/cask"
+
 brew "ant"
 brew "aria2"
 brew "autoconf"
 brew "autojump"
 brew "automake"
+brew "bukalapak/packages/snowboard"
 brew "freetype"
 brew "fontconfig"
 brew "gettext"
@@ -29,6 +32,7 @@ brew "x264"
 brew "xvid"
 brew "ffmpeg"
 brew "fribidi"
+brew "fzf"
 brew "gobject-introspection"
 brew "gradle"
 brew "harfbuzz"
@@ -58,27 +62,22 @@ brew "shadowsocks-libev"
 brew "shellcheck"
 brew "tcpkali"
 brew "tesseract"
+brew "telnet"
 brew "the_silver_searcher"
 brew "tmux"
 brew "tree"
+brew "timothyye/tap/skm"
 brew "vim"
 brew "wget"
 brew "pivotal/tap/springboot"
 cask "eclipse-java"
 cask "mojibar"
-=======
-tap "timothyye/tap"
-tap "homebrew/core"
-tap "homebrew/bundle"
-tap "caskroom/cask"
-tap "bukalapak/packages"
-brew "fzf"
-brew "python3"
-brew "telnet"
-brew "the_silver_searcher"
-brew "tmux"
-brew "tree"
-brew "bukalapak/packages/snowboard"
-brew "timothyye/tap/skm"
 cask "ieasemusic"
->>>>>>> 3b459df4e41eb1ae8788bf6b70b4d0d750dbe9fe
+
+
+
+
+
+
+
+
