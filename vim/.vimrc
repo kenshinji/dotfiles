@@ -48,11 +48,13 @@ set incsearch
 set hlsearch
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
 set nowritebackup
 set nobackup
 set ff=unix
 set guifont=Monaco:h14
+
+set number relativenumber
+
 " set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " set list
 
