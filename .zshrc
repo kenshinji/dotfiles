@@ -84,6 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="/usr/local/Cellar/macvim/7.4-104/bin/mvim"
 alias vi="/usr/local/Cellar/vim/7.4.1864_1/bin/vim"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
