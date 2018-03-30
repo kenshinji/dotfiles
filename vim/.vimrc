@@ -65,6 +65,8 @@ else
 endif
 colorscheme solarized
 filetype plugin indent on " required!
+set modeline
+set modelines=5
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
