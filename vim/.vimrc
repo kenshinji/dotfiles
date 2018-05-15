@@ -15,6 +15,7 @@ inoremap jk <esc>
 inoremap <esc> <nop>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Add mapping for auto close
 ino " ""<left>
