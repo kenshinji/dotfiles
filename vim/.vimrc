@@ -77,4 +77,6 @@ function! SwitchBuffer()
 endfunction
 
 nmap <Tab> :call SwitchBuffer()<CR>
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 	
