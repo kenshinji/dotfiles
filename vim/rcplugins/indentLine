@@ -1,0 +1,8 @@
+" In order to make this plugin work, you should make sure that you've enabled
+" +conceal by checking :ver
+Plugin 'Yggdroot/indentLine'
+
+let g:indentLine_color_term = 239
+
+let g:indentLine_char = '⎸'
+" vim:ft=vim
