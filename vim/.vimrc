@@ -53,6 +53,7 @@ set nowritebackup
 set nobackup
 set ff=unix
 set guifont=Monaco:h14
+set noswapfile
 
 set number relativenumber
 
