@@ -1,0 +1,5 @@
+"Go configurations
+"-----------------------------
+Plugin 'fatih/vim-go'
+
+" vim:ft=vim
