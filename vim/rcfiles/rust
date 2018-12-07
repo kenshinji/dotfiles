@@ -1,0 +1,9 @@
+" Rust configurations
+"---------------------------------
+Plugin 'rust-lang/rust.vim'
+
+" make sure rustfmt is installed
+let g:rustfmt_autosave = 1
+
+
+" vim:ft=vim
