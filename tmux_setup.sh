@@ -22,7 +22,7 @@ if command_exists tmux; then
 			mv ~/.tmux.conf ~/.tmux.conf-`date +%Y%m%d`
 		fi
 	else
-		echo "No tmux.conf file found!"
+		echo "Tmux.conf file not found!"
 	fi
 
 	echo "Now creating symbol link for .tmux.conf ......"
@@ -30,7 +30,7 @@ if command_exists tmux; then
 	echo ".tmux.conf link created!"
 else
 	#need to install tmux, depends on OS
-	>&2 echo "Tmux not found, make sure you have installed it first."
+	>&2 echo "Tmux not found, make sure you have installed it before continue."
 	ret=1
 	exit $ret
 fi 
