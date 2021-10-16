@@ -81,3 +81,5 @@ nmap <Tab> :call SwitchBuffer()<CR>
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 	
+" add fzf support for vim
+set rtp+=/usr/local/opt/fzf
